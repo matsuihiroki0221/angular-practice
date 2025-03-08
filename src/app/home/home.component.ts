@@ -1,11 +1,11 @@
-import { Component, inject } from "@angular/core";
-import { CommonModule } from "@angular/common";
-import { HousingLocationComponent } from "../housing-location/housing-location.component";
-import { HousingLocation } from "../housinglocation";
-import { HousingService } from "../housing.service";
+import { Component, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { HousingLocationComponent } from '../housing-location/housing-location.component';
+import { HousingLocation } from '../housinglocation';
+import { HousingService } from '../housing.service';
 
 @Component({
-  selector: "app-home",
+  selector: 'app-home',
   imports: [CommonModule, HousingLocationComponent],
   template: `
     <section>
@@ -21,7 +21,7 @@ import { HousingService } from "../housing.service";
       ></app-housing-location>
     </section>
   `,
-  styleUrls: ["./home.component.scss"],
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
   housingLocationList: HousingLocation[] = [];

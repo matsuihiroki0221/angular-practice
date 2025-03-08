@@ -6,7 +6,7 @@
       },
       "editor.formatOnSave": false
     },
-    "[html]": {
+    "[component.html]": {
       "editor.defaultFormatter": "dbaeumer.vscode-eslint",
       "editor.codeActionsOnSave": {
         "source.fixAll.eslint": "explicit"

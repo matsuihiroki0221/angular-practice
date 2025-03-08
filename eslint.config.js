@@ -31,16 +31,7 @@ export default tseslint.config(
           prefix: "app",
           style: "kebab-case",
         },
-      ],
-      "prettier/prettier": [
-        "error",
-        {
-          semi: true,
-          indent: 2,
-          singleQuote: false,
-          trailingComma: "es5",
-        },
-      ],
+      ]
     },
   },
   {
