@@ -44,7 +44,7 @@ export default tseslint.config(
     },
   },
   {
-    files: ["**/*.html"],
+    files: ["**/*.component.html"],
     extends: [
       ...angular.configs.templateRecommended,
       ...angular.configs.templateAccessibility,
@@ -54,7 +54,7 @@ export default tseslint.config(
       "prettier/prettier": [
         "error",
         {
-          parser: "angular",
+          indent: 2,
         },
       ],
     },

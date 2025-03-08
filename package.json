@@ -8,7 +8,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "eslint . --ext .ts,.js,.html --fix"
+    "lint": "eslint . --ext .ts,.js,component.html --fix"
   },
   "private": true,
   "dependencies": {
