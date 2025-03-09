@@ -23,13 +23,11 @@ export class DetailsComponent {
 
   constructor() {
     const housingLocationId = Number(this.route.snapshot.params['id']);
-    this.housingLocation =
-      this.housingService.getHousingLocationById(housingLocationId);
-    this.housingService.submitApplication(
-      this.applyForm.value.firstName ?? '',
-      this.applyForm.value.lastName ?? '',
-      this.applyForm.value.email ?? '',
-    );
+    this.housingService
+      .getHousingLocationById(housingLocationId)
+      .then((housingLocation: HousingLocation | undefined) => {
+        this.housingLocation = housingLocation;
+      });
   }
 
   submitApplication(): void {

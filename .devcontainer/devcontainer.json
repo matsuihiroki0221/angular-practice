@@ -12,7 +12,7 @@
 	"forwardPorts": [4200],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "npm install -g @angular/cli",
+	"postCreateCommand": "npm install -g @angular/cli json-server",
 	"customizations": {
 		"vscode": {
 			"extensions": [
