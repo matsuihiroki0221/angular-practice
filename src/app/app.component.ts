@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
   template: `
     <main>
       <a [routerLink]="['/']">
-        <header class="header">
+        <header class="brand-name">
           <img
             class="brand-logo"
             src="/assets/logo.svg"

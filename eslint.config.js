@@ -39,15 +39,8 @@ export default tseslint.config(
     extends: [
       ...angular.configs.templateRecommended,
       ...angular.configs.templateAccessibility,
-      eslintPluginPrettierRecommended,
     ],
     rules: {
-      "prettier/prettier": [
-        "error",
-        {
-          indent: 2,
-        },
-      ],
     },
   },
 );
